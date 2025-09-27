@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Smith - Education Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .portfolio {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #2c3e50, #4a6741);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #666;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .education-item, .experience-item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .education-item h3, .experience-item h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .institution, .company {
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 5px 0;
+            color: #555;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background: #2c3e50;
+            color: white;
+            padding: 30px 40px;
+            margin: 0 -40px -40px -40px;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="portfolio">
+            <div class="header">
+                <div class="frank.jpg">👨‍🎓</div>
+                <h1>John Smith</h1>
+                <p class="subtitle">Educator & Learning Specialist</p>
+            </div>
+
+            <div class="content">
+                <div class="section">
+                    <h2>About Me</h2>
+                    <p>Passionate educator with over 4 years of experience in curriculum development, student engagement, and educational technology integration. Committed to creating inclusive learning environments that foster critical thinking and lifelong learning.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Education</h2>
+                    
+
+                    <div class="education-item hover-effect">
+                        <h3>BSc Geospatial</h3>
+                        <div class="institution">Jomo Kenyata University of Agriculture and Technology</div>
+                        <div class="date">2016 - 2022</div>
+                 
+                    </div>
+
+                    <div class="education-item hover-effect">
+                        <h3>Secodary School</h3>
+                        <div class="institution">Nakuru High school</div>
+                        <div class="date">from 2011-2015</div>
+                      
+                    </div>
+                </div>
+
+
+                    <div class="experience-item hover-effect">
+                        <h3>Student Teacher</h3>
+                        <div class="company">Washington Elementary</div>
+                        <div class="date">2017 - 2018</div>
+                        <p>Completed supervised teaching practicum in diverse classroom environments.</p>
+                    </div>
+                </div>
+
+               
+
+                        <div class="skill-category hover-effect">
+                            <h3>Technology</h3>
+                            <ul class="skill-list">
+                                <li>GIS</li>
+                                <li>Remote Sensing</li>
+                                <li>Land Survey</li>
+                                <li>Data Analysis</li>
+                              <li>Mapping adn Cartography</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+               
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>frankline@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>+254798......</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p>linkedin/p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
